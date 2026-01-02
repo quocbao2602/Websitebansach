@@ -1,0 +1,326 @@
+.book-detail-page {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+.detail-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.btn-back {
+  background-color: #95a5a6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-bottom: 20px;
+  transition: background-color 0.3s;
+}
+
+.btn-back:hover {
+  background-color: #7f8c8d;
+}
+
+.book-detail-content {
+  display: grid;
+  grid-template-columns: 400px 1fr;
+  gap: 40px;
+  background-color: white;
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.book-image-section img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.book-info-section h1 {
+  margin: 0 0 25px 0;
+  color: #2c3e50;
+  font-size: 32px;
+  line-height: 1.3;
+}
+
+.book-meta {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 25px;
+}
+
+.meta-row {
+  display: flex;
+  padding: 10px 0;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.meta-row:last-child {
+  border-bottom: none;
+}
+
+.meta-label {
+  font-weight: 600;
+  color: #7f8c8d;
+  min-width: 150px;
+}
+
+.meta-value {
+  color: #2c3e50;
+  flex: 1;
+}
+
+.book-price-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 8px;
+  margin-bottom: 25px;
+}
+
+.price-info {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.price-label {
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 18px;
+}
+
+.price-value {
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.rating-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: #fff;
+  gap: 4px;
+}
+
+.rating-stars {
+  font-size: 16px;
+}
+
+.rating-value {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.stock-info .stock-badge {
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.stock-badge.in-stock {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.stock-badge.out-of-stock {
+  background-color: rgba(231, 76, 60, 0.9);
+  color: white;
+}
+
+.book-description {
+  margin-bottom: 30px;
+}
+
+.book-description h3 {
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-size: 20px;
+}
+
+.book-description p {
+  color: #34495e;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.purchase-section {
+  background-color: #f8f9fa;
+  padding: 25px;
+  border-radius: 8px;
+  border: 2px solid #3498db;
+}
+
+.quantity-selector {
+  margin-bottom: 20px;
+}
+
+.quantity-selector label {
+  display: block;
+  margin-bottom: 10px;
+  color: #2c3e50;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.quantity-controls {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.quantity-controls button {
+  width: 40px;
+  height: 40px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: background-color 0.3s;
+}
+
+.quantity-controls button:hover:not(:disabled) {
+  background-color: #2980b9;
+}
+
+.quantity-controls button:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.quantity-controls input {
+  width: 80px;
+  height: 40px;
+  text-align: center;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.btn-add-to-cart {
+  width: 100%;
+  background: linear-gradient(135deg, #27ae60, #229954);
+  color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-add-to-cart:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(39, 174, 96, 0.3);
+}
+
+.out-of-stock-message {
+  background-color: #fee;
+  border: 2px solid #e74c3c;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+}
+
+.out-of-stock-message p {
+  margin: 0;
+  color: #c0392b;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.reviews-section {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #ecf0f1;
+}
+
+.reviews-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.review-item {
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 12px;
+  background: #fff;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.review-author {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.avatar-circle {
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  background: #3498db;
+  color: #fff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.review-date {
+  color: #7f8c8d;
+  font-size: 12px;
+}
+
+.review-comment {
+  margin: 0;
+  color: #2c3e50;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .book-detail-content {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .book-image-section img {
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .book-price-section {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+
+  .book-info-section h1 {
+    font-size: 24px;
+  }
+
+  .price-value {
+    font-size: 28px;
+  }
+}
